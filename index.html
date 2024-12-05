@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="GSlogo.jpg" type="image/x-icon">
+    <title>Sparx Scripts Repository</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+            font-size: 1rem; /* Base font size */
+        }
+
+        #content {
+            max-width: 1100px; /* Set a max-width for the content */
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 4vw; /* Responsive font size */
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #3E4E5E;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+            line-height: 1.6;
+            max-width: 80%;
+            margin: 0 auto 2rem;
+        }
+
+        .start-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 1rem;
+            color: #888;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .features div {
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            color: #333;
+            width: 30%;
+            min-width: 250px; /* Ensure a minimum width */
+            transition: transform 0.3s ease;
+        }
+
+        .features div:hover {
+            transform: translateY(-5px);
+        }
+
+        .features div h3 {
+            font-size: 1.5rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .features div p {
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .cta {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .cta a {
+            color: #1100ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta a:hover {
+            text-decoration: underline;
+        }
+
+        /* Flashing background animation */
+        .flash-background {
+            animation: flashBackground 0.5s infinite;
+        }
+
+        @keyframes flashBackground {
+            0%, 100% {
+                background-color: #f4f4f9; /* Original background */
+            }
+            50% {
+                background-color: #ff0000; /* Flashing red */
+            }
+        }
+
+        /* Media queries for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 5vw;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            button {
+                padding: 1rem 2.5rem;
+            }
+
+            .features div {
+                width: 45%;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 6vw;
+            }
+
+            .description {
+                font-size: 0.9rem;
+            }
+
+            .features div {
+                width: 100%;
+            }
+
+            .cta {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <h1>Sparx Maths Scripts</h1>
+        <p class="description">Welcome to the Sparx Maths Scripts Repository! Here, you will find the latest Sparx Scripts. Follow the button or link below to access our free Sparx Maths Scripts. For the best experience, please turn up your audio, as we will guide you through the activation process.</p>
+
+        <div class="start-container">
+            <button id="startButton">Browse Scripts</button>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features">
+            <div>
+                <h3>On Demand Scripts</h3>
+                <p>Our On Demand Scripts are in high demand, offering tailored solutions to meet your specific needs. These scripts are designed to save time and enhance efficiency, making them a popular choice among users. Due to their effectiveness and flexibility</p>
+            </div>
+            <div>
+                <h3>Easily Use Sparx</h3>
+                <p><img src="GSlogo.jpg" alt="A beautiful scenery" style="width: 80%; height: auto;" />
+                </p>
+            </div>
+            <div>
+                <h3>24/7 Support</h3>
+                <p>We understand the importance of reliable support, which is why our team is available around the clock to assist you. Whether you're troubleshooting, seeking guidance, or have questions about our services.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p class="cta">Interested in more scripts? <a href="#">Coming Soon</a>.</p>
+        </footer>
+    </div>
+
+    <!-- Two audio elements -->
+    <audio id="audio1" src="audiomp3.mp3" loop></audio>
+    <audio id="audio2" src="audio2mp3.mp3"></audio> <!-- Second audio, no loop -->
+
+    <script>
+        const audio1 = document.getElementById("audio1");
+        const audio2 = document.getElementById("audio2");
+        const startButton = document.getElementById("startButton");
+        const body = document.body;
+
+        // Start button logic
+        startButton.addEventListener("click", () => {
+            // Lock cursor
+            document.body.requestPointerLock();
+
+            // Set the first audio to start at 10 seconds
+            audio1.currentTime = 10;
+
+            // Play the first audio
+            audio1.play();
+
+            // Add flashing background effect after 2.5 seconds
+            setTimeout(() => {
+                body.classList.add("flash-background");
+            }, 7500); // Delay flashing for 2.5 seconds
+
+            // Play the second audio for 3 seconds after 7.5 seconds
+            setTimeout(() => {
+                audio2.play(); // Start playing the second audio
+                setTimeout(() => {
+                    audio2.pause(); // Stop the second audio after 3 seconds
+                    audio2.currentTime = 0; // Reset it to the start
+                }, 3000); // Stop after 3 seconds
+            }, 1); // Delay second audio for 0.5 seconds
+        });
+
+        // Pointer Lock event listener
+        document.addEventListener("pointerlockchange", () => {
+            if (document.pointerLockElement) {
+                console.log("Pointer is locked.");
+            } else {
+                console.log("Pointer is unlocked.");
+            }
+        });
+    </script>
+
+</body>
+</html>
