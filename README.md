@@ -29,10 +29,3 @@ We understand the importance of reliable support, which is why our team is avail
 ---
 
 Thank you for visiting the Sparx Scripts Repository! We’re committed to providing you with the best scripts and the most reliable support. If you have any questions or need assistance, don’t hesitate to reach out to us at any time.
-
----
-
-### Contact Information:
-
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- Website: [your-website.com](http://your-website.com)
